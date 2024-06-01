@@ -1,3 +1,11 @@
+declare global {
+  interface Window {
+    particlesJS: (tagId: string, params: object) => void;
+  }
+}
+// Now TypeScript knows about `window.particlesJS` --> error resolved
+
+
 // src/components/ParticlesBackground.tsx
 'use client'
 import 'particles.js';
