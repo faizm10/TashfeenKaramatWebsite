@@ -26,8 +26,20 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer components {
+  @keyframes slide {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
+
+/* Add this inside the Tailwind CSS utilities layer */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .animate-slide {
+    animation: slide 2s linear infinite;
   }
 }

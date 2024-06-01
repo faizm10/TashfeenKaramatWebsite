@@ -22,17 +22,18 @@ export default function NavBar() {
       }}
     >
       <NavbarBrand>
-        <p className="font-bold text-inherit">Tashfeen</p>
+      <Link className="font-bold text-inherit" href="/">Tashfeen</Link>
+        {/* <p className="font-bold text-inherit">Tashfeen</p> */}
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link href="/dashboard">About Me</Link>
+          <Link href="/about">About Me</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#/">Education</Link>
+          <Link href="/education">Education</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#/">Photography</Link>
+          <Link href="/photography">Photography</Link>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
