@@ -13,7 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      
+      colors: {
+        primary: {
+          DEFAULT: '#111827', // Dark Gray
+        },
+        secondary: {
+          DEFAULT: '#2dd4bf', // Light Teal
+        },
+      },
+      fontFamily: {
+        // amaranth: ['Amaranth', 'sans-serif'],
+        sourcesans: ['Source Sans Pro', 'sans-serif'],
+      },
     },
   },
   plugins: [],

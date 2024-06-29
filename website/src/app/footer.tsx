@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4">
+    <footer className="bg-primary text-white p-4">
       <div className="container mx-auto flex justify-between items-center flex-wrap">
         <div>
-          <p className="text-sm">Tashfeen Karamat | Carleton University</p>
-          <p className="text-xs">Email: tashfeen.karamat@carleton.ca</p>
+          <p className="text-md">Tashfeen Karamat | Carleton University</p>
+          {/* <p className="text-md">Email: tashfeen.karamat@carleton.ca</p> */}
         </div>
         <div className="flex space-x-4">
           <Link href="https://www.linkedin.com/in/tashfeen-karamat-phd-peng-6038a014/">
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           </Link>
         </div>
         <div>
-          <p className="text-xs">
+          <p className="text-md">
             © 2024 Tashfeen Karamat. All rights reserved.
           </p>
         </div>
