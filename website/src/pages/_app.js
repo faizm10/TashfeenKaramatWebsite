@@ -1,11 +1,18 @@
 // import Navbar from ''
 import "../app/globals.css";
-import Navbar from "../app/navbar";
+import Navbar from "../components/Navbar/navbar";
+import * as React from "react";
+
+// 1. import `NextUIProvider` component
+import { NextUIProvider } from "@nextui-org/react";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Navbar />
-      <Component {...pageProps} />
+      <NextUIProvider>
+        {/* <Navbar /> */}
+        <Component {...pageProps} />
+      </NextUIProvider>
     </>
   );
 }
